@@ -13,7 +13,7 @@ import 'package:voice_message_package/src/widgets/play_pause_button.dart';
 ///
 class VoiceMessageView extends StatelessWidget {
   const VoiceMessageView(
-      {Key? key,
+      {super.key,
       required this.controller,
       this.backgroundColor = Colors.white,
       this.activeSliderColor = Colors.red,
@@ -49,8 +49,7 @@ class VoiceMessageView extends StatelessWidget {
         fontSize: 11,
         fontWeight: FontWeight.w500,
       ),
-      this.playPauseButtonLoadingColor = Colors.white})
-      : super(key: key);
+      this.playPauseButtonLoadingColor = Colors.white});
 
   /// The controller for the voice message view.
   final VoiceController controller;
